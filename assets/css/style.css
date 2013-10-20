@@ -237,7 +237,7 @@ input.error, textarea.error {
 	height: 60px;
 	text-align: center;
 	position: absolute;
-	margin: 0 auto;
+	margin: -10px auto;
 }
 
 #nav-sticky-wrapper.is-sticky #nav {
