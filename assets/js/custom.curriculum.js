@@ -14,22 +14,7 @@ jQuery(document).ready(function($) {
         $('.info').find('.container').css('top', ((infoBox.height() - titleBox.height() - 20) / 2) + 'px');
     }
 
-    // Skill pie charts
-
-    setupPie(); // On ready, initialize pies
-
-    function setupPie() {
-        $('.skill-pie').easyPieChart({
-            barColor: '#f08b65',
-            trackColor: '#cccccc',
-            scaleColor: false,
-            lineWidth: 5,
-            size: 120
-        });
-    }
-
     // Making navigation sticky on scroll
-
     $('#nav').sticky({topSpacing: 10});
 
     $('#nav ul').onePageNav({scrollSpeed: 400});
@@ -37,16 +22,32 @@ jQuery(document).ready(function($) {
     $(window).scroll(function() {
         if ($(window).scrollTop() < $(window).height() / 2) {
             $('#nav').find('li').removeClass('current');
+
         }
     });
+
+    prev = function() {
+        return false;
+    }
+
+
+    $('.rojects').mixitup({
+        targetSelector: '.projec',
+        filterSelector: '.afilter', 
+        effects: ['rotateX'],
+        easing: 'snap'
+    });
+
 
     // Portfolio sorter initialization
     $('.projects').mixitup({
         targetSelector: '.project', // Class required on each portfolio item
         filterSelector: '.filter', // Class required on each filter link
-        effects: ['rotateZ'],
+        effects: ['rotateX'],
         easing: 'snap'
     });
+
+
 
     // Portfolio items zoom / popover
     $('.image-popup').magnificPopup({type: 'image'});
@@ -72,7 +73,7 @@ jQuery(document).ready(function($) {
     );
 
     // Full background image
-    $('.fx-backstretch').find('.info').backstretch('assets/img/backstretch.jpg'); // Replace backstrech.jpg with your own image if needed
+    $('.fx-backstretch').find('.info').backstretch('/Gioielli-Italia/assets/img/backstretch.jpg'); // Replace backstrech.jpg with your own image if needed
 
 
 

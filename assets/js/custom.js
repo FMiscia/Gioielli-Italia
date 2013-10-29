@@ -4,6 +4,13 @@
  */
 $(document).ready(function() {
 
+    $('.filter').click(function(e) {
+        
+        $('.filter').not($(this)).hide('slow');
+       
+    });
+
+
     var map = initializeMap();
     var markerPos = new google.maps.LatLng(
             parseFloat(48.90799),
@@ -38,7 +45,7 @@ $(document).ready(function() {
     function infoHTML() {
         var output;
         output = '<div><h4>' + marker.title + '</h4></div>'
-                +'<div style="float:left"><img src=assets/img/map.jpg /><div>'
+                + '<div style="float:left"><img src=/Gioielli-Italia/assets/img/map.jpg /><div>'
                 + '<div style="display:inline;float:right"><ul class="clearfix">'
                 + '<li>' + marker.address + '</li>'
                 + '<li>' + marker.tel + '</li>'
@@ -57,6 +64,8 @@ $(document).ready(function() {
         };
         return new google.maps.Map($('#map_canvas')[0], myOptions);
     }
+
+
 
 
 

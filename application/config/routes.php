@@ -31,15 +31,16 @@
 | URI contains no data. In the above example, the "welcome" class
 | would be loaded.
 |
-|	$route['404_override'] = 'errors/page_missing';
+|	
 |
 | This route will tell the Router what URI segments to use if those provided
 | in the URL cannot be matched to a valid route.
 |
 */
 
-$route['default_controller'] = "Frontend";
-$route['404_override'] = '';
+$route['default_controller'] = 'pages/view';
+$route['404_override'] = 'errors/page_missing';
+//$route['(:any)'] = 'pages/view/$1';
 
 
 /* End of file routes.php */

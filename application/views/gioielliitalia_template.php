@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 
-<!--
-NOTICE:
-- - - - - -
-This is a preview of the "Curriculum" template by QBKL.
-Using this preview or any of its part without having purchased a license previously is a violation of international copyright laws. Yes, that means stealing.
-If you like this template and respect our work, we appreciate you purchasing a very affordable license before you use it.
-
-QBKL would like to thank the authors of all the scripts that were used to make this template what it is!
-
-http://themeforest.net/user/QBKL
-http://www.qbkl.net
-http://www.facebook.com/QBKLstudio
-http://twitter.com/QBKL
--->
-
 <html>
     <head>
 
@@ -28,21 +13,21 @@ http://twitter.com/QBKL
         <meta name="author" content="">
 
         <!-- Loading: Normalize, Grid and Styles -->
-        <link rel="stylesheet" href="assets/css/normalize.css" media="screen">
-        <link rel="stylesheet" href="assets/css/qbkl-grid.css" media="screen">
-        <link rel="stylesheet" href="assets/css/style.css" media="screen">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/css/normalize.css" media="screen">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/css/qbkl-grid.css" media="screen">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/css/style.css" media="screen">
 
         <!-- Loading: Font Awesome -->
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/font-awesome/css/font-awesome.min.css">
         <!--[if IE 7]>
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome-ie7.min.css">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/font-awesome/css/font-awesome-ie7.min.css">
         <![endif]-->
 
         <!-- Loading: jQuery Magnific Popup Stylesheet -->
-        <link rel="stylesheet" href="assets/js/magnific/jquery.magnific-popup.css" media="screen">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/js/magnific/jquery.magnific-popup.css" media="screen">
 
         <!-- Loading: jQuery Easy Pie Chart Stylesheet -->
-        <link rel="stylesheet" href="assets/js/easy-pie/jquery.easy-pie-chart.css" media="screen">
+        <link rel="stylesheet" href="/Gioielli-Italia/assets/js/easy-pie/jquery.easy-pie-chart.css" media="screen">
 
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,11 +39,11 @@ http://twitter.com/QBKL
         <nav id="nav">
             <!-- The content between <span> </span> tags will be hidden on mobile version -->
             <ul class="clearfix">
-                <li><a href="#whoweare">Über uns<span></span></a></li>
+                <li><a href="#whoweare">Home<span></span></a></li>
                 <li><a href="#gold">Gold</a></li>
                 <li><a href="#trauringe">Trauringe</a></li>
                 <li><a href="#modeschmuck">Modeschmuck</a></li>
-                <li><a href="#einladung"><span>Einladung skarten</span></a></li>
+                <li><a href="#einladung"><span>Einladungskarten</span></a></li>
                 <li><a href="#bomboniere">Bomboniere<span></span></a></li>
                 <li><a href="#taufkleider"><span>Taufkleider</span></a></li>
                 <li><a href="#contact"><span>Kontakt</span></a></li>
@@ -86,14 +71,14 @@ http://twitter.com/QBKL
             <div class="container">
                 <div class="row">
                     <div class="col-full">
-                        <h2 class="section-title">Über uns</h2>
+                        <h2 class="section-title">Herzlich Willkommen</h2>
                         <div class="centered line"></div>
                     </div>
                 </div>
 
                 <div class="row section-content">
                     <div class="col-1-3">
-                        <img src="assets/img/extern1-small.jpg"/>
+                        <img src="/Gioielli-Italia/assets/img/extern1-small.jpg"/>
                     </div>
                     <div class="col-1-3">
                         <h4>From 1995's</h4>
@@ -102,7 +87,7 @@ http://twitter.com/QBKL
                             Um ein umfangreiches Angebot sicherstellen zu können, arbeiten wir mit Namhaften Unternehmen aus Italien zusammen.</p>
                     </div>
                     <div class="col-1-3">
-                        <img src="assets/img/extern3-small.jpg"/>
+                        <img src="/Gioielli-Italia/assets/img/extern3-small.jpg"/>
                     </div>
                 </div>
                 <div class="col-1-3">
@@ -115,7 +100,7 @@ http://twitter.com/QBKL
                         Einladungskarte aus!</p>
                 </div>
                 <div class="col-1-3">
-                    <a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/extern2-small.jpg"/></a>
+                    <a href="/Gioielli-Italia/assets/img/big-4.jpg" title="Project 9"><img src="/Gioielli-Italia/assets/img/extern2-small.jpg"/></a>
                 </div>
                 <div class="col-1-3">
                     <h4>For your entire life</h4>
@@ -142,38 +127,21 @@ http://twitter.com/QBKL
                     <!-- Portfolio filters -->
                     <div class="row">
                         <div class="col-full">
-                            <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food ">Objects &amp; Food</li>
-                            </ul>
+                           
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
-                    <div class="row projects gallery">
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food port-street"><a href="assets/img/big-5.jpg" title="Project 7"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-6.jpg" title="Project 8"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food"><a href="assets/img/big-3.jpg" title="Project 10"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-2.jpg" title="Project 11"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-1.jpg" title="Project 12"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-food port-street"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects port-street"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
+                    <div class="row gallery">
+                        {gold_image_entries}
+                        <div class="col-1-6"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        {/gold_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
+
 
         <!-- Start: Portfolio -->
         <section id="trauringe" class="section">
@@ -189,39 +157,20 @@ http://twitter.com/QBKL
                     <!-- Portfolio filters -->
                     <div class="row">
                         <div class="col-full">
-                            <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food">Objects &amp; Food</li>
-                            </ul>
+
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
-                    <div class="row projects gallery">
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 7"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 8"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 10"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 11"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 12"><img src="assets/img/thumb-1.png" alt=""></a></div>
+                    <div class="row gallery">
+                        {trauringe_image_entries}
+                        <div class="col-1-6  "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        {/trauringe_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
 
 
         <!-- Start: Portfolio -->
@@ -239,36 +188,23 @@ http://twitter.com/QBKL
                     <div class="row">
                         <div class="col-full">
                             <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food">Objects &amp; Food</li>
+                                <li class="afilter" data-filter="damen">Damen</li>
+                                <li class="afilter" data-filter="herren">Herren</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
-                    <div class="row projects gallery">
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>					<div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 7"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 8"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 10"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 11"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 12"><img src="assets/img/thumb-1.png" alt=""></a></div>
+                    <div class="row rojects gallery">
+                        {modeschmuck_image_entries}
+                        <div class="col-1-6 projec {filter}"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>    
+                        {/modeschmuck_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
+
 
 
         <!-- Start: Portfolio -->
@@ -285,38 +221,21 @@ http://twitter.com/QBKL
                     <!-- Portfolio filters -->
                     <div class="row">
                         <div class="col-full">
-                            <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food">Objects &amp; Food</li>
-                            </ul>
+
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
-                    <div class="row projects gallery">
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 7"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 8"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 10"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 11"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 12"><img src="assets/img/thumb-1.png" alt=""></a></div>
+                    <div class="row gallery">
+                        {einladungskarten_image_entries}
+                        <div class="col-1-6  "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        {/einladungskarten_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
+
 
         <!-- Start: Portfolio -->
         <section id="bomboniere" class="section">
@@ -333,37 +252,23 @@ http://twitter.com/QBKL
                     <div class="row">
                         <div class="col-full">
                             <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food">Objects &amp; Food</li>
+                                <li class="filter" data-filter="port-hochzeit">Hochzeit</li>
+                                <li class="filter" data-filter="port-komunion">Komunion</li>
+                                <li class="filter" data-filter="port-taufe_geburt">Taufe Geburt</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
                     <div class="row projects gallery">
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-5.jpg" title="Project 7"><img src="assets/img/thumb-5.png" alt=""></a></div>
-                        <div class="col-1-6 project port-street"><a href="assets/img/big-6.jpg" title="Project 8"><img src="assets/img/thumb-6.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-4.jpg" title="Project 9"><img src="assets/img/thumb-4.png" alt=""></a></div>
-                        <div class="col-1-6 project port-food"><a href="assets/img/big-3.jpg" title="Project 10"><img src="assets/img/thumb-3.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-2.jpg" title="Project 11"><img src="assets/img/thumb-2.png" alt=""></a></div>
-                        <div class="col-1-6 project port-objects"><a href="assets/img/big-1.jpg" title="Project 12"><img src="assets/img/thumb-1.png" alt=""></a></div>
+                        {bomboniere_image_entries}
+                        <div class="col-1-6 project port-{filter}"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""/></a></div>
+                        {/bomboniere_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
 
         <!-- Start: Portfolio -->
         <section id="taufkleider" class="section">
@@ -379,28 +284,22 @@ http://twitter.com/QBKL
                     <!-- Portfolio filters -->
                     <div class="row">
                         <div class="col-full">
-                            <ul class="filters">
-                                <li class="filter" data-filter="all">All</li>
-                                <li class="filter" data-filter="port-objects">Objects</li>
-                                <li class="filter" data-filter="port-food">Food</li>
-                                <li class="filter" data-filter="port-street">Street Art</li>
-                                <li class="filter" data-filter="port-objects port-food">Objects &amp; Food</li>
-                            </ul>
+
                         </div>
                     </div>
 
                     <!-- Portfolio items -->
-                    <div class="row projects gallery">
-                        {image_entries}
-                        <div class="col-1-6 project port-objects"><a href={source} title ={name}><img src={source} alt=""></a></div>
-                        {/image_entries}
+                    <div class="row gallery">
+                        {taufkleider_image_entries}
+                        <div class="col-1-6 "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        {/taufkleider_image_entries}
                     </div>
+                    <!-- End: Portfolio -->
                 </div>
             </div>
         </section>
-        <!-- End: Portfolio -->
 
-        <!-- Start: Contact -->
+
         <!-- Start: Contact -->
         <section id="contact" class="section">
             <div class="container">
@@ -436,7 +335,7 @@ http://twitter.com/QBKL
                     <div class="separator"></div>
 
                     <div class="col-1-3 centered text-center">
-                        <a href="https://www.facebook.com/italia.defalco"><img src="assets/img/fblogo.jpg"/></a>
+                        <a href="https://www.facebook.com/italia.defalco"><img src="/Gioielli-Italia/assets/img/fblogo.jpg"/></a>
                     </div>
                 </div>
             </div>
@@ -454,51 +353,51 @@ http://twitter.com/QBKL
                 <div class="separator"></div>
 
                 <div class="col-1-3 centered text-center">
-                    @Micio Team 2013
+                    <a href="/Gioielli-Italia/index.php/pages/login" >@Micio Team 2013</a>
                 </div> 
             </div>
         </section>         
 
         <!-- Loading: jQuery and custom script -->
-        <script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery-1.10.2.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery-migrate-1.2.1.min.js"></script>
 
         <!-- Loading: jQuery MixItUp (portfolio filters) -->
-        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.mixitup.min.js"></script>
 
         <!-- Loading: jQuery Magnific Popup (lightbox) -->
-        <script src="assets/js/magnific/jquery.magnific-popup.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/magnific/jquery.magnific-popup.min.js"></script>
 
         <!-- Loading: jQuery Easy Pie Chart -->
-        <script src="assets/js/easy-pie/jquery.easy-pie-chart.js"></script>
+        <script src="/Gioielli-Italia/assets/js/easy-pie/jquery.easy-pie-chart.js"></script>
 
         <!-- Loading: jQuery Sticky -->
-        <script src="assets/js/jquery.sticky.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.sticky.js"></script>
 
         <!-- Loading: jQuery Backstretch (full photo background) -->
-        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.backstretch.min.js"></script>
 
         <!-- Loading, Setting Up: Form, Form Validation Plugin -->
-        <script src="assets/js/jquery.form.min.js" type="text/javascript"></script>
-        <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="assets/js/jquery.validation.settings.js" type="text/javascript"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.form.min.js" type="text/javascript"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.validation.settings.js" type="text/javascript"></script>
 
         <!-- Loading: Respond.js - Responsive IE8 -->
-        <script src="assets/js/respond.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/respond.min.js"></script>
 
-        <script src="assets/js/jquery.scrollto.min.js"></script>
-        <script src="assets/js/jquery.nav.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.scrollto.min.js"></script>
+        <script src="/Gioielli-Italia/assets/js/jquery.nav.js"></script>
 
         <!--[if lt IE 9]>
-        <script src="assets/js/excanvas.js"></script>
+        <script src="/Gioielli-Italia/assets/js/excanvas.js"></script>
         <![endif]-->
 
         <!--Loading: google.map-->
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAO2zXC0wh-S8SjMgPRZfoTUGZMGHBIzZ0&sensor=false"></script>
 
         <!-- Loading: Custom scripting -->
-        <script src="assets/js/custom.curriculum.js" type="text/javascript"></script>
-        <script src="assets/js/custom.js" type="text/javascript"></script>
+        <script src="/Gioielli-Italia/assets/js/custom.curriculum.js" type="text/javascript"></script>
+        <script src="/Gioielli-Italia/assets/js/custom.js" type="text/javascript"></script>
 
     </body>
 </html>
