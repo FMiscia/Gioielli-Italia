@@ -26,10 +26,6 @@ jQuery(document).ready(function($) {
         }
     });
 
-    prev = function() {
-        return false;
-    }
-
 
     $('.rojects').mixitup({
         targetSelector: '.projec',
@@ -73,7 +69,7 @@ jQuery(document).ready(function($) {
     );
 
     // Full background image
-    $('.fx-backstretch').find('.info').backstretch('/Gioielli-Italia/assets/img/backstretch.jpg'); // Replace backstrech.jpg with your own image if needed
+    $('.fx-backstretch').find('.info').backstretch('/assets/img/backstretch.jpg'); // Replace backstrech.jpg with your own image if needed
 
 
 

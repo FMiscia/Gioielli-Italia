@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $(document).on('click', '#addProduct', function(e) {
         e.preventDefault();
-        $("#block").html('<img src="/Gioielli-Italia/assets/img/loader.gif" alt="Uploading...."/>');
+        $("#block").html('<img src="/assets/img/loader.gif" alt="Uploading...."/>');
         $('#type').attr("value", type);
         $("#newHotnessForm").ajaxForm(
                 {
@@ -81,5 +81,11 @@ $(document).ready(function() {
         window.location = './home/logout/true';
         return false;
     });
+
+    $('#bhome').click(function() {
+        window.location = './home';
+        return false;
+    });
+
 
 });

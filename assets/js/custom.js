@@ -4,13 +4,6 @@
  */
 $(document).ready(function() {
 
-    $('.filter').click(function(e) {
-        
-        $('.filter').not($(this)).hide('slow');
-       
-    });
-
-
     var map = initializeMap();
     var markerPos = new google.maps.LatLng(
             parseFloat(48.90799),
@@ -20,7 +13,7 @@ $(document).ready(function() {
         'position': markerPos,
         'map': map,
         'title': "Gioielli Italia",
-        'address': "Hirschbergstraße 53, 71634 Ludwigsburg",
+        'address': "Hirschbergstra&szlig;e 53, 71634 Ludwigsburg",
         'tel': "Tel  07141378985",
         'mobile': "Mobile 01796833989",
         'infoHTML': infoHTML
@@ -45,7 +38,7 @@ $(document).ready(function() {
     function infoHTML() {
         var output;
         output = '<div><h4>' + marker.title + '</h4></div>'
-                + '<div style="float:left"><img src=/Gioielli-Italia/assets/img/map.jpg /><div>'
+                + '<div style="float:left"><img src=/assets/img/map.jpg /><div>'
                 + '<div style="display:inline;float:right"><ul class="clearfix">'
                 + '<li>' + marker.address + '</li>'
                 + '<li>' + marker.tel + '</li>'
@@ -64,6 +57,15 @@ $(document).ready(function() {
         };
         return new google.maps.Map($('#map_canvas')[0], myOptions);
     }
+
+    function checkfield() {
+        var reg = /^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]/;
+        return ($('#name').val() == "" || $('#email').val() == "" || reg.test($('#email').val()) || $('#message').val() == "")
+
+    }
+
+
+
 
 
 
