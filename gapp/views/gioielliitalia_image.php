@@ -3,6 +3,8 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/assets/css/image_admin.css">
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="shortcut icon" href="/assets/img/diamante.ico" >
+        <title>Gioielli Italia</title>
         <!-- Loading: Normalize, Grid and Styles -->
         <link rel="stylesheet" href="/assets/css/normalize.css" media="screen">
         <link rel="stylesheet" href="/assets/css/qbkl-grid.css" media="screen">

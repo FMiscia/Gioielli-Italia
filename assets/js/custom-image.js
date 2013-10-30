@@ -80,7 +80,7 @@ $(document).ready(function() {
     });
 
     $('#logout').click(function() {
-        window.location = './home/logout/true';
+        window.location = './logout';
         return false;
     });
 

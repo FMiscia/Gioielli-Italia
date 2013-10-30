@@ -12,14 +12,14 @@ class Pages extends CI_Controller {
     }
 
     public function view($page = 'home') {
-        $data['title'] = ucfirst($page); 
+        $data['title'] = ucfirst($page);
         if (method_exists($this, $page))
             @$this->$page();
         else
             $this->home();
     }
 
-    public function home($logout = false) {
+    public function home() {
         $this->load->library('parser');
         $data = array(
             'taufkleider_image_entries' => array(),
@@ -46,11 +46,6 @@ class Pages extends CI_Controller {
                 }
             }
         }
-        if ($logout == true) {
-            session_start();
-            $_SESSION['admin'] = false;
-            session_destroy();
-        }
         $this->parser->parse('gioielliitalia_template', $data);
     }
 
@@ -66,6 +61,12 @@ class Pages extends CI_Controller {
 
             $this->parser->parse('gioielliitalia_login', $data);
         }
+    }
+
+    public function logout() {
+        session_start();
+        session_destroy();
+        $this->home();
     }
 
     public function checkLogin() {

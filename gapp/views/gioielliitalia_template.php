@@ -5,8 +5,8 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-        <title>Gioielli-Italia</title>
-
+        <title>Gioielli Italia</title>
+        <link rel="shortcut icon" href="/assets/img/diamante.ico" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
