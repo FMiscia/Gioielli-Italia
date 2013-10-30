@@ -117,7 +117,7 @@ jQuery(document).ready(function($) {
         url: "./pages/send",
         data: $("#form-contact").serialize(),
         success: function(data) {
-            var response = $.parseJSON(data);
+            response = $.parseJSON(data);
             $("#form-message").ajaxComplete(function(event, request, settings) {
                 if (response.result) // Message Sent? Show the 'Thank You' message
                 {
