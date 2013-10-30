@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
     $("#form-contact").ajaxForm({
         beforeSubmit: validateContact,
         type: "POST",
-        url: "./send",
+        url: "./pages/send",
         data: $("#form-contact").serialize(),
         success: function(data) {
             var response = $.parseJSON(data);
