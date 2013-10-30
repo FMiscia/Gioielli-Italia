@@ -40,8 +40,8 @@
 
 $route['default_controller'] = 'pages';
 $route['404_override'] = 'errors/page_missing';
-$route['pages/(:any)'] = 'pages/view/$1';
-$route['(:any)']= 'pages/view';
+//$route['pages/(:any)'] = 'pages/view/$1';
+//$route['(:any)']= 'pages/view';
 
 
 
