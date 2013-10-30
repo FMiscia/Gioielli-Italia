@@ -529,9 +529,11 @@ input.error, textarea.error {
 
 
 /* B. Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 907px) {
     .skill,
     .project { width: 33.33333333333333%; }
+    .projec { width: 33.33333333333333%; }
+    .otherimg{ width: 33.33333333333333%;}
     .job-project { width: 50%; }
     #nav li a span { display: none; }
 }
@@ -548,6 +550,8 @@ input.error, textarea.error {
     .skill,
     .job-project,
     .project { float: left; width: 50%; }
+    .projec { float: left; width: 50%; }
+    .otherimg{ float: left; width: 50%;}
     .text-right { text-align: left; }
 }
 

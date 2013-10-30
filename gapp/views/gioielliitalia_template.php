@@ -40,9 +40,9 @@
             <!-- The content between <span> </span> tags will be hidden on mobile version -->
             <ul class="clearfix">
                 <li><a href="#whoweare">Home<span></span></a></li>
-                <li><a href="#gold">Gold</a></li>
-                <li><a href="#trauringe">Trauringe</a></li>
-                <li><a href="#modeschmuck">Modeschmuck</a></li>
+                <li><a href="#gold">Gold<span></span></a></li>
+                <li><a href="#trauringe"><span>Trauringe</span></a></li>
+                <li><a href="#modeschmuck">Modeschmuck<span></span></a></li>
                 <li><a href="#einladung"><span>Einladungskarten</span></a></li>
                 <li><a href="#bomboniere">Bomboniere<span></span></a></li>
                 <li><a href="#taufkleider"><span>Taufkleider</span></a></li>
@@ -79,7 +79,7 @@
                 <div class="row section-content">
                     <div class="col-1-3">
 
-                        <img src="/assets/img/ex1.jpg"/>
+                        <img src="/assets/img/ex1.jpg" height=240 width=370/>
 
                     </div>
                     <div class="col-1-3">
@@ -89,7 +89,7 @@
                             Um ein umfangreiches Angebot sicherstellen zu k&ouml;nnen, arbeiten wir mit Namhaften Unternehmen aus Italien zusammen.</p>
                     </div>
                     <div class="col-1-3">
-                        <img src="/assets/img/ex2.jpg"/>
+                        <img src="/assets/img/ex2.jpg" height=240 width=370/>
 
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         Einladungskarte aus!</p>
                 </div>
                 <div class="col-1-3">
-                    <img src="/assets/img/extern3-small.jpg"/></a>
+                    <img src="/assets/img/extern3-small.jpg" height=240 width=370/></a>
                 </div>
                 <div class="col-1-3">
                     <h4>For your entire life</h4>
@@ -138,7 +138,7 @@
                     <!-- Portfolio items -->
                     <div class="row gallery">
                         {gold_image_entries}
-                        <div class="col-1-6"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        <div class="col-1-6 otherimg"><a href={source} title ={name}><img src={thumb} height="150" width="150" alt=""/></a></div>
                         {/gold_image_entries}
                     </div>
                     <!-- End: Portfolio -->
@@ -168,7 +168,7 @@
                     <!-- Portfolio items -->
                     <div class="row gallery">
                         {trauringe_image_entries}
-                        <div class="col-1-6  "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        <div class="col-1-6 otherimg"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""/></a></div>
                         {/trauringe_image_entries}
                     </div>
                     <!-- End: Portfolio -->
@@ -201,7 +201,7 @@
                     <!-- Portfolio items -->
                     <div class="row rojects gallery">
                         {modeschmuck_image_entries}
-                        <div class="col-1-6 projec {filter}"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>    
+                        <div class="col-1-6 projec {filter}"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""/></a></div>    
                         {/modeschmuck_image_entries}
                     </div>
                     <!-- End: Portfolio -->
@@ -232,7 +232,7 @@
                     <!-- Portfolio items -->
                     <div class="row gallery">
                         {einladungskarten_image_entries}
-                        <div class="col-1-6  "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        <div class="col-1-6 otherimg"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""/></a></div>
                         {/einladungskarten_image_entries}
                     </div>
                     <!-- End: Portfolio -->
@@ -295,7 +295,7 @@
                     <!-- Portfolio items -->
                     <div class="row gallery">
                         {taufkleider_image_entries}
-                        <div class="col-1-6 "><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""></a></div>
+                        <div class="col-1-6 otherimg"><a href={source} title ={name}><img src={thumb} height=150 width="150" alt=""/></a></div>
                         {/taufkleider_image_entries}
                     </div>
                     <!-- End: Portfolio -->

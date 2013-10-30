@@ -8,16 +8,16 @@
 class Pages extends CI_Controller {
 
     public function index() {
-        $this->home();
+        $this->view();
     }
 
-    /* public function view($page = 'home') {
-      $data['title'] = ucfirst($page); // Capitalize the first letter
-      if (method_exists($this, $page))
-      @$this->$page();
-      else
-      $this->home();
-      } */
+    public function view($page = 'home') {
+        $data['title'] = ucfirst($page); 
+        if (method_exists($this, $page))
+            @$this->$page();
+        else
+            $this->home();
+    }
 
     public function home($logout = false) {
         $this->load->library('parser');
@@ -80,6 +80,11 @@ class Pages extends CI_Controller {
                 session_start();
                 $_SESSION['admin'] = true;
                 $this->parser->parse('gioielliitalia_image', $this->loadAllImages());
+            } else {
+                $data = array(
+                    'error' => 'Login Errato',
+                );
+                $this->parser->parse('gioielliitalia_login', $data);
             }
         } else {
             $data = array(
@@ -194,7 +199,7 @@ class Pages extends CI_Controller {
             $this->email->subject('Messaggio da Gioielli-Italia');
             $this->email->message($message);
 
-            
+
             if ($this->email->send()) {
                 $out = array('result' => true);
             }
