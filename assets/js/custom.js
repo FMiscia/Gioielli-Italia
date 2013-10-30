@@ -17,8 +17,8 @@ $(document).ready(function() {
         'tel': "Tel  07141/378985",
         'mobile': "Mobile 01796833989",
         'email': 'gioielli-italia@web.de',
-        'apertura1': 'mo-fr 10-13 Uhr und 15:30-20 Uhr',
-        'apertura2': 'Sa. 10-19 Uhr',
+        'apertura1': 'Mo-Fr 10-13 Uhr und 15:30-20 Uhr',
+        'apertura2': 'Sa 10-19 Uhr',
         'infoHTML': infoHTML
     });
 
