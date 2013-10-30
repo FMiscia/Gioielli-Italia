@@ -194,6 +194,7 @@ class Pages extends CI_Controller {
             $this->email->subject('Messaggio da Gioielli-Italia');
             $this->email->message($message);
 
+            
             if ($this->email->send()) {
                 $out = array('result' => true);
             }

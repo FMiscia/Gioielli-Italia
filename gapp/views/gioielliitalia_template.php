@@ -78,7 +78,9 @@
 
                 <div class="row section-content">
                     <div class="col-1-3">
+
                         <img src="/assets/img/ex1.jpg"/>
+
                     </div>
                     <div class="col-1-3">
                         <h4>From 1995's</h4>
@@ -88,6 +90,7 @@
                     </div>
                     <div class="col-1-3">
                         <img src="/assets/img/ex2.jpg"/>
+
                     </div>
                 </div>
                 <div class="col-1-3">
