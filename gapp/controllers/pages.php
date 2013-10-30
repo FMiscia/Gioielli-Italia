@@ -195,7 +195,7 @@ class Pages extends CI_Controller {
             $this->load->library('email');
 
             $this->email->from($email, $name);
-            $this->email->to('admin@gioielli-italia.com');
+            $this->email->to('fra.miscia@gmail.com');
 
             $this->email->subject('Messaggio da Gioielli-Italia');
             $this->email->message($message);

@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] =  isset($_SERVER['DB1_HOST'])?$_SERVER['DB1_HOST']:"localhost";
-$db['default']['username'] =  isset($_SERVER["DB1_USER"])?$_SERVER["DB1_USER"]:'-----';
-$db['default']['password'] =  isset($_SERVER["DB1_PASS"])?$_SERVER["DB1_PASS"]:'-----';
-$db['default']['database'] = 'usr_web720_2';
+$db['default']['username'] =  isset($_SERVER["DB1_USER"])?$_SERVER["DB1_USER"]:'root';
+$db['default']['password'] =  isset($_SERVER["DB1_PASS"])?$_SERVER["DB1_PASS"]:'r00tdir31';
+$db['default']['database'] = 'Gioielli';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
