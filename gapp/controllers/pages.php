@@ -118,8 +118,10 @@ class Pages extends CI_Controller {
              * Upload configuration
              */
             $config['upload_path'] = $pth;
-            $config['allowed_types'] = 'gif|jpg|png|JPG';
-            $config['max_size'] = '4000';
+            $config['allowed_types'] = '|JPEG|gif|JPG|jpeg|jpg|png';
+            $config['max_size'] = '40000';
+            $config['max_width']  = '6000';
+            $config['max_height']  = '5000';
             $this->load->library('upload', $config);
             if ($this->upload->do_upload("file")) {
                 $out = array('result' => true);

@@ -59,7 +59,7 @@
                     </div>
                     <div class="row"><div class="col-1-4 centered line"></div></div>
                     <div class="row">
-                        <div class="col-full"><h4>Making je<span class="cool">w</span>els cool since 1995</h4></div>
+                       <!-- <div class="col-full"><h4>Making je<span class="cool">w</span>els cool since 1995</h4></div>-->
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
 
                     </div>
                     <div class="col-1-3">
-                        <h4>From 1995's</h4>
+                        <h4>Seit 1995</h4>
                         <p>Der Familienbetrieb Gioielli Italia bietet seit 1995 ein weitgehendes Sortiment an Italienischem Gold (750er, 18 karat), 
                             Schmuck, wie auch Trauringen an. Au&szlig;erdem erstellen wir Ihnen gerne Kaufangebote f&uuml;r Ihr Altgold. Bei uns finden Sie aktuellen Modeschmuck in verschiedensten Varianten. 
                             Um ein umfangreiches Angebot sicherstellen zu k&ouml;nnen, arbeiten wir mit Namhaften Unternehmen aus Italien zusammen.</p>
@@ -94,19 +94,19 @@
                     </div>
                 </div>
                 <div class="col-1-3">
-                    <h4>Everything special you want</h4>
+                    <h4>Serviceleistungen</h4>
                     <p> Zu unserer Serviceleistung geh&ouml;rt die Reparatur von Schmuck, als auch das stechen von Ohrl&ouml;chern. 
-                        Sie sind auf der Suche nach individuellen Ideen f&uuml;r Ihre pers&ouml;nlichen Festlichkeiten? 
+                        Sie sind auf der Suche nach einzigartigen Ideen f&uuml;r Ihre pers&ouml;nlichen Festlichkeiten? 
                         Lesen Sie alles rund um Hochzeit und Co. Solch ein besonderer Tag sollte f&uuml;r Sie, wie auch f&uuml;r jeden Ihrer 
                         G&auml;ste, immer in Erinnerung bleiben. Die Einladungskarten sind die Visitenkarte Ihrer Hochzeit, deshalb 
-                        sollte diese ganz nach Ihren w&uuml;nschen gestaltet sein, kommen Sie zu Uns und suchen Sie die passende 
+                        sollte diese ganz nach Ihren w&uuml;nschen gestaltet sein, kommen Sie zu uns und suchen Sie die passende 
                         Einladungskarte aus!</p>
                 </div>
                 <div class="col-1-3">
                     <img src="/assets/img/extern3-small.jpg" height=240 width=370/></a>
                 </div>
                 <div class="col-1-3">
-                    <h4>For your entire life</h4>
+                    <h4>Bomboniere</h4>
                     <p>Von der Geburt bis zur Hochzeit bieten wir Bomboniere, die sogenannten "Gastgeschenke" in unserem Gesch&auml;ft an. 
                         Sie &auml;u&szlig;ern Ihre w&uuml;nsche f&uuml;r Ihren ganz pers&ouml;nlichen Anlass und wir werden es zu Ihrer Zufriedenheit umsetzen. 
                         Spezialisiert sind wir auf Bomboniere f&uuml;r Geburt, Taufe, Kommunion, Konfirmation, Hochzeit, Geburtstag, oder 

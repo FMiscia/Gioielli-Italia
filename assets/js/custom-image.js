@@ -20,20 +20,30 @@ $(document).ready(function() {
                 {
                     success: function(data) {
                         var response = jQuery.parseJSON(data);
-                        if (response.result) {
+                        if (response == null) {
                             $("#block").html('');
-                            $("#block").html('Immagine inserita con successo nella sezione "' + type + '"');
+                            $("#block").html('Errore. Il tempo di caricamento deve essere inferiore ai 30 secondi. \n\
+                                Prova con un\'immagine di dimensione inferiore a 1.2M');
                             $('.filter-adm').show();
                             $('#newHotnessForm').hide('slow');
-                            /*setTimeout(function() {
-                             location.reload();
-                             }, 1200);*/
-                        }
-                        else {
-                            $("#block").html('');
-                            $("#block").html('Errore. Forse la dimensione dell\'immagine &eacute troppo grande o di\n\
+                        } else {
+                            if (response.result) {
+                                $("#block").html('');
+                                $("#block").html('Immagine inserita con successo nella sezione "' + type + '"');
+                                $('.filter-adm').show();
+                                $('#newHotnessForm').hide('slow');
+                                /*setTimeout(function() {
+                                 location.reload();
+                                 }, 1200);*/
+                            }
+                            else {
+                                $("#block").html('');
+                                $("#block").html('Errore. Forse la dimensione dell\'immagine &eacute troppo grande o di\n\
                                         un tipo diverso da png,jpg o JPG');
+                                $('.filter-adm').show();
+                                $('#newHotnessForm').hide('slow');
 
+                            }
                         }
                     }
                 }).submit();
