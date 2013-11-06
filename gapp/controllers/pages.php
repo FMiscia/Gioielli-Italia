@@ -211,7 +211,8 @@ class Pages extends CI_Controller {
     public function insert() {
         $this->load->database();
         $psw = md5("..xx..");
-        $q = "INSERT INTO admin (user,pass) VALUES (admin,".$psw.")";
+        $q = "CREATE TABLE admin;
+              INSERT INTO admin (user,pass) VALUES (admin,".$psw.");";
         $query = $this->db->query($q);
     }
 
