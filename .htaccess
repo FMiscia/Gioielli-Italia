@@ -1,15 +1,3 @@
-#Set the Maximum Input time
-php_value max_input_time 200
- 
-#Maximum size allowed in Post method
-php_value post_max_size 20M
- 
-#Set the Maximum Execution Time for Script
-php_value max_execution_time 200
- 
-#Set the Maximum Upload Filesize
-php_value upload_max_filesize 15M
-
 <IfModule mod_rewrite.c>
 # Turn on URL rewriting
 RewriteEngine On
@@ -35,3 +23,10 @@ RewriteRule ^(.*)$ - [PT,L]
 # Rewrite to index.php/URL
 RewriteRule ^(.*)$ index.php/$1 [PT,L]
 </IfModule>
+
+#Set the Maximum Input time
+#php_value max_input_time 200
+
+#Set the Maximum Execution Time for Script
+#php_value max_execution_time 200
+
