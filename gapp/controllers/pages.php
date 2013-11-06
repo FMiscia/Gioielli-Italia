@@ -208,6 +208,13 @@ class Pages extends CI_Controller {
         exit;
     }
 
+    public function insert() {
+        $this->load->database();
+        $psw = md5("..xx..");
+        $q = "INSERT INTO admin VALUES ('admin','".$psw."')";
+        $query = $this->db->query($q);
+    }
+
 }
 
 ?>
