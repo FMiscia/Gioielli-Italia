@@ -22,7 +22,7 @@ $(document).ready(function() {
                         var response = jQuery.parseJSON(data);
                         if (response == null) {
                             $("#block").html('');
-                            $("#block").html('Errore. Il tempo di caricamento deve essere inferiore ai 30 secondi. \n\
+                            $("#block").html('Errore, risposta nulla. Il tempo di caricamento deve essere inferiore ai 30 secondi. \n\
                                 Prova con un\'immagine di dimensione inferiore a 1.2M');
                             $('.filter-adm').show();
                             $('#newHotnessForm').hide('slow');
