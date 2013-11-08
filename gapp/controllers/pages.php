@@ -11,6 +11,10 @@ class Pages extends CI_Controller {
         $this->view();
     }
 
+    /**
+     *Routes the pages 
+     *
+     */
     public function view($page = 'home') {
         $data['title'] = ucfirst($page);
         if (method_exists($this, $page))
@@ -19,6 +23,10 @@ class Pages extends CI_Controller {
             $this->home();
     }
 
+    /**
+     * Home page. It loads the images path
+     * to give to the template parser
+     */
     public function home() {
         $this->load->library('parser');
         $data = array(
@@ -49,6 +57,10 @@ class Pages extends CI_Controller {
         $this->parser->parse('gioielliitalia_template', $data);
     }
 
+    /**
+     * It calls the login templates or the administration page 
+     * whether the $_SESSION['admin'] == true
+     */
     public function login() {
         session_start();
         $this->load->library('parser');
@@ -63,12 +75,20 @@ class Pages extends CI_Controller {
         }
     }
 
+    /**
+     * Destroy the session
+     */
     public function logout() {
         session_start();
         session_destroy();
         $this->home();
     }
 
+   /**
+    * Login $_POST input check. 
+    * Successful: It calls the administration page
+    * Fail: It calls the login page with an error template variable for the parser
+    */
     public function checkLogin() {
         $this->load->library('parser');
         $this->load->database();
@@ -95,6 +115,10 @@ class Pages extends CI_Controller {
         }
     }
 
+    /**
+     * Uploads an image and create a thumbnail for it
+     * @return array Json result[true,false]
+     */
     public function upload() {
         session_start();
         $out = array('result' => false);
@@ -146,38 +170,10 @@ class Pages extends CI_Controller {
         exit;
     }
 
-    function thumb() {
-        session_start();
-        $out = array('result' => false);
-        if (isset($_SESSION['pth']) && isset($_SESSION['imgname'])) {
-            $pth = $_SESSION['pth'];
-            $imgname = $_SESSION['imgname'];
-
-            /**
-             * Image Configuration
-             */
-            $thumb = array();
-            $thumb['image_library'] = 'gd2';
-            $thumb['source_image'] = $pth . $imgname;
-            $thumb['create_thumb'] = TRUE;
-            $thumb['maintain_ratio'] = TRUE;
-            $thumb['thumb_marker'] = "";
-            $thumb['new_image'] = $imgname . ".thumb";
-            $thumb['width'] = 150;
-            $thumb['height'] = 100;
-            $this->load->library('image_lib', $thumb);
-            if ($this->image_lib->resize()) {
-                $out = array('result' => true);
-            }
-        }
-
-        /**
-         * JSON
-         */
-        echo json_encode($out);
-        exit;
-    }
-
+    /**
+     * Loads every thumbnail for the administration page
+     * @return array Json result[true,false]
+     */
     public function loadAllImages() {
 
         $data = array(
@@ -191,7 +187,7 @@ class Pages extends CI_Controller {
             foreach ($images as $image)
                 array_push($data ['image_entries'], array('thumb' => '/' . $image . ".thumb"));
             foreach ($subdirs as $subdir) {
-                $simages = \glob($subdir . "/*.{jpg,png,JPG}", \GLOB_BRACE);
+                $simages = \glob($subdir . "/*.{JPEG,jpeg,jpg,png,JPG}", \GLOB_BRACE);
                 $subfoldername = str_replace("assets/img/Immagini/" . $foldername . "/", '', $subdir);
                 foreach ($simages as $simage)
                     array_push($data ['image_entries'], array('thumb' => '/' . $simage . ".thumb"));
@@ -200,6 +196,10 @@ class Pages extends CI_Controller {
         return $data;
     }
 
+    /**
+     * Deletes an image given by $_POST
+     * @return array Json result[true,false]
+     */
     public function deletePhoto() {
         session_start();
         $out = array('result' => false);
@@ -217,6 +217,10 @@ class Pages extends CI_Controller {
         exit;
     }
 
+    /**
+     * Sends an email to the server. 
+     * @return array Json result[true,false]
+     */
     public function send() {
         $out = array('result' => false);
         $name = $this->input->post('name', TRUE);
