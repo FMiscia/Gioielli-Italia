@@ -34,12 +34,12 @@ class Pages extends CI_Controller {
         foreach ($dirs as $dir) {
             $foldername = str_replace("assets/img/Immagini/", '', $dir);
             $subdirs = array_filter(\glob('assets/img/Immagini/' . $foldername . '/*'), 'is_dir');
-            $images = \glob($dir . "/*.{jpg,png,JPG}", \GLOB_BRACE);
+            $images = \glob($dir . "/*.{jpg,png,jpeg,JPEG,JPG}", \GLOB_BRACE);
             foreach ($images as $image) {
                 array_push($data [$foldername . '_image_entries'], array('name' => "", 'source' => '/' . $image, 'thumb' => '/' . $image . ".thumb"));
             }
             foreach ($subdirs as $subdir) {
-                $simages = \glob($subdir . "/*.{jpg,png,JPG}", \GLOB_BRACE);
+                $simages = \glob($subdir . "/*.{JPEG,jpeg,jpg,png,JPG}", \GLOB_BRACE);
                 $subfoldername = str_replace("assets/img/Immagini/" . $foldername . "/", '', $subdir);
                 foreach ($simages as $simage) {
                     array_push($data[$foldername . '_image_entries'], array('name' => "", 'source' => '/' . $simage, 'thumb' => '/' . $simage . ".thumb", 'filter' => $subfoldername));
@@ -98,50 +98,81 @@ class Pages extends CI_Controller {
     public function upload() {
         session_start();
         $out = array('result' => false);
-        if (isset($_SESSION['admin']) && $_SESSION['admin'] == true &&
-                isset($_FILES["file"]) && isset($_POST["tipo"]) && $_POST["tipo"] != "") {
-            $imgname = $_FILES["file"]['name'];
-            /**
-             * Path Building
-             */
-            $tipo = $_POST["tipo"];
-            $path = explode("-", $tipo);
-            $num = (count($path) );
-            $counter = -1;
-            $pth = "./assets/img/Immagini/";
-            while ($num != 0) {
-                $counter++;
-                $pth .= $path[$counter] . "/";
-                $num--;
-            }
-            /**
-             * Upload configuration
-             */
-            $config['upload_path'] = $pth;
-            $config['allowed_types'] = 'gif|JPG|JPEG|PNG|jpeg|jpg|png';
-            $this->load->library('upload', $config);
-            if ($this->upload->do_upload("file")) {
-                $out = array('result' => true);
-            }
-            @unlink($_FILES['file']);
-            /**
-             * Image Configuration
-             */
-            $config['image_library'] = 'gd2';
-            $config['source_image'] = $pth . $imgname;
-            $config['create_thumb'] = TRUE;
-            $config['maintain_ratio'] = TRUE;
-            $config['thumb_marker'] = "";
-            $config['new_image'] = $imgname . ".thumb";
-            $config['width'] = 150;
-            $config['height'] = 100;
-            $this->load->library('image_lib', $config);
-            if (!$this->image_lib->resize()) {
-                $out = array('result' => false);
+        if (isset($_SESSION['admin']) && $_SESSION['admin'] == true && isset($_FILES['file']['tmp_name'])) {
+            if (($_FILES['file']["size"] < 500000) && $_FILES['file']["type"] == ("image/png" || "image/jpg" || "image/jpeg" || "image/gif")) {
+                /**
+                 * Path Building
+                 */
+                $tipo = $_POST['tipo'];
+                $imgname = $_POST['name'];
+                $path = explode("-", $tipo);
+                $num = (count($path) );
+                $counter = -1;
+                $pth = "./assets/img/Immagini/";
+                while ($num != 0) {
+                    $counter++;
+                    $pth .= $path[$counter] . "/";
+                    $num--;
+                }
+                if (!(file_exists($pth . $imgname)))
+                    move_uploaded_file($_FILES['file']["tmp_name"], $pth . $imgname);
+                else {
+                    echo json_encode($out);
+                    exit;
+                }
+
+                /**
+                 * Image Configuration
+                 */
+                $thumb = array();
+                $thumb['image_library'] = 'gd2';
+                $thumb['source_image'] = $pth . $imgname;
+                $thumb['create_thumb'] = TRUE;
+                $thumb['maintain_ratio'] = TRUE;
+                $thumb['thumb_marker'] = "";
+                $thumb['new_image'] = $imgname . ".thumb";
+                $thumb['width'] = 150;
+                $thumb['height'] = 100;
+                $this->load->library('image_lib', $thumb);
+                if ($this->image_lib->resize()) {
+                    $out = array('result' => true);
+                }
             }
         }
         /**
-         * Json 
+         * JSON
+         */
+        echo json_encode($out);
+        exit;
+    }
+
+    function thumb() {
+        session_start();
+        $out = array('result' => false);
+        if (isset($_SESSION['pth']) && isset($_SESSION['imgname'])) {
+            $pth = $_SESSION['pth'];
+            $imgname = $_SESSION['imgname'];
+
+            /**
+             * Image Configuration
+             */
+            $thumb = array();
+            $thumb['image_library'] = 'gd2';
+            $thumb['source_image'] = $pth . $imgname;
+            $thumb['create_thumb'] = TRUE;
+            $thumb['maintain_ratio'] = TRUE;
+            $thumb['thumb_marker'] = "";
+            $thumb['new_image'] = $imgname . ".thumb";
+            $thumb['width'] = 150;
+            $thumb['height'] = 100;
+            $this->load->library('image_lib', $thumb);
+            if ($this->image_lib->resize()) {
+                $out = array('result' => true);
+            }
+        }
+
+        /**
+         * JSON
          */
         echo json_encode($out);
         exit;
@@ -156,7 +187,7 @@ class Pages extends CI_Controller {
         foreach ($dirs as $dir) {
             $foldername = str_replace("assets/img/Immagini/", '', $dir);
             $subdirs = array_filter(\glob('assets/img/Immagini/' . $foldername . '/*'), 'is_dir');
-            $images = \glob($dir . "/*.{jpg,png,JPG}", \GLOB_BRACE);
+            $images = \glob($dir . "/*.{JPEG,jpeg,jpg,png,JPG}", \GLOB_BRACE);
             foreach ($images as $image)
                 array_push($data ['image_entries'], array('thumb' => '/' . $image . ".thumb"));
             foreach ($subdirs as $subdir) {
@@ -208,8 +239,6 @@ class Pages extends CI_Controller {
         echo json_encode($out);
         exit;
     }
-
-
 
 }
 

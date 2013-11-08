@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="/assets/css/qbkl-grid.css" media="screen">
         <link rel="stylesheet" href="/assets/css/style.css" media="screen">
 
-
         <!-- Loading: Font Awesome -->
         <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
         <!--[if IE 7]>
@@ -34,7 +33,7 @@
                 <li><a href="#elimina">Elimina Foto </a></li>
                 <li><a id="logout">Logout</a></li>
                 <li><a id="aggiorna">Aggiorna</a></li>
-                 <li><a id="bhome">Home</a></li>
+                <li><a id="bhome">Home</a></li>
             </ul>
         </nav>
         <section id="inserisci" class="section">
@@ -78,13 +77,21 @@
                         </ul>
                     </div>
                 </div>
-                <div style="display:block;text-align: center">
-                    <form id="newHotnessForm" action="./upload" method="post" enctype="multipart/form-data">
+                <div id="upcontainer" style="display:block;text-align: center">
+                    <div id="filelist"></div>
+                    <br />
+                    <button id="pickfiles">Scegli un immagine</button><br>
+                    <a id="uploadfiles" href="#">Salva</a>
+                    <!--<form id="newHotnessForm" action="#" method="post" enctype="multipart/form-data">
                         <label id="lfile">Scegli un'immagine:</label>
-                        <input id="ifile" name="file" type="file" size="20" />
+                        <input id="ifile" name="file" type="file" value="" size="20" />
                         <input id="type" type="hidden" name="tipo" value=""/>
                         <div align="center"><a href="#" id="addProduct">Salva</a></div>
+                        <div id="uploader">
+                            <p>You browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.</p>
+                        </div>
                     </form>
+                    <!--<canvas id="manipulate" width="800" height="600"></canvas>-->
                 </div>
                 <div class="col-full" id="block"></div>
             </div>
@@ -125,8 +132,12 @@
         <script src="/assets/js/jquery.scrollto.min.js"></script>
         <script src="/assets/js/jquery.nav.js"></script>
         <script src="/assets/js/custom.curriculum.js" type="text/javascript"></script>
-        <!--<script src="/assets/js/custom.curriculum.js" type="text/javascript"></script>-->
 
+        <!--<script src="/assets/js/custom.curriculum.js" type="text/javascript"></script>-->
+        <script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+        <!-- Load plupload and all it's runtimes and finally the jQuery queue widget -->
+        <script type="text/javascript" src="/assets/js/plupload/plupload.full.min.js"></script>
+        <script type="text/javascript" src="/assets/js/plupload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
 
     </body>
 </html>
