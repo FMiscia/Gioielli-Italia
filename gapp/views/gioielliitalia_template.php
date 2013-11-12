@@ -216,7 +216,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-full">
-                        <h2 class="section-title">Einladung Skarten</h2>
+                        <h2 class="section-title">Einladungskarten</h2>
                         <div class="centered line"></div>
                     </div>
                 </div>
