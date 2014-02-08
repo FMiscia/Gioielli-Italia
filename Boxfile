@@ -1,7 +1,6 @@
 web1:
-  name: gioielli-italia
+  name: bunny
   php_extensions: [mcrypt, mysqli, mysql, mbstring] 
-  shared_writable_dirs: [templates/template1/templates_c/]
 db1:
   name: Gioielli
   type: mysql

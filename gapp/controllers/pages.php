@@ -129,6 +129,7 @@ class Pages extends CI_Controller {
                  */
                 $tipo = $_POST['tipo'];
                 $imgname = $_POST['name'];
+                $imgname = str_replace(" ", "", $imgname);
                 $path = explode("-", $tipo);
                 $num = (count($path) );
                 $counter = -1;
